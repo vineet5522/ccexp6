@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/OIP.jpg');
+        color: aliceblue;
+        font-family: 'Baloo Bhai 2', cursive;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .mid {
+        display: block;
+        margin: 29px auto;
+        width: 55%;
+        /* border: 2px solid red; */
+    }
+
+    .right {
+        position: absolute;
+        right: 15px;
+        top: 23px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 20px;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .left {
+        border-radius: 10px;
+    }
+
+    .left img {
+        width: 80px;
+        border-radius: 20px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 7px 14px;
+        border: 2px solid green;
+        ;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 17px;
+    }
+
+    .btn:hover {
+        background-color: burlywood;
+    }
+
+    .container {
+        border: 2px solid white;
+        width: 33%;
+        margin: 120px 70px;
+        padding: 57px 80px;
+        border-radius: 50px;
+    }
+
+    .formint input {
+        text-align: center;
+        display: block;
+        width: 434px;
+        padding: 3px;
+        margin: 5px auto;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 25px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .form button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo2.jfif" alt="">
+            <div>Be Fit</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li class="names"><a href="#">Home</a></li>
+                <li class="names"><a href="#">About Us</a></li>
+                <li class="names"><a href="#">Fitness Calculation</a></li>
+                <li class="names"><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="head">Join the best Gym in pune</h2>
+        <div class="form-grp">
+            <form action="form.php" class="form">
+                <div class="formint">
+                    <input type="text" placeholder="Enter your Name here">
+                </div>
+                <div class="formint">
+                    <input type="text" placeholder="Enter your Age here">
+                </div>
+                <div class="formint">
+                    <input type="text" placeholder="Enter your Phone here">
+                </div>
+                <div class="formint">
+                    <input type="text" placeholder="Enter your PinCode here">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
